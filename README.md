@@ -1,6 +1,6 @@
 <!--
   Mohamed_Abdlahi_Mohamud_CV.html
-  Single-file responsive CV website with profile image added.
+  Single-file responsive CV website (cleaned version).
 -->
 
 <!doctype html>
@@ -17,8 +17,7 @@
     .container{max-width:960px;margin:36px auto;padding:24px}
     .card{background:var(--card);border-radius:16px;box-shadow:0 8px 24px rgba(12,34,63,0.08);overflow:hidden}
     .header{display:flex;gap:20px;align-items:center;padding:28px}
-    .avatar{width:110px;height:110px;border-radius:14px;flex:0 0 110px;background:var(--glass);display:flex;align-items:center;justify-content:center;overflow:hidden}
-    .avatar img{width:100%;height:100%;object-fit:cover}
+    .avatar{display:none}
     .title{flex:1}
     .name{font-size:20px;font-weight:700;color:var(--accent);margin:0}
     .role{margin:6px 0 0;color:var(--muted)}
@@ -27,7 +26,7 @@
     .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
     .btn.secondary{background:transparent;color:var(--accent);border:1px solid var(--glass)}
     .main{display:grid;grid-template-columns:1fr 320px;gap:24px;padding:28px;border-top:1px dashed rgba(11,114,211,0.06)}
-    @media(max-width:880px){.main{grid-template-columns:1fr;}.avatar{width:90px;height:90px}.header{padding:20px}.container{padding:16px;margin:16px}}
+    @media(max-width:880px){.main{grid-template-columns:1fr;}.header{padding:20px}.container{padding:16px;margin:16px}}
     .section{background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.8));padding:18px;border-radius:12px;margin-bottom:18px}
     h3{margin:0 0 12px;font-size:16px;color:#0b2540}
     p{margin:0;color:#123}
@@ -50,9 +49,6 @@
   <div class="container">
     <div class="card">
       <div class="header">
-        <div class="avatar">
-          <img src="unnamed (2).png" alt="Mohamed Abdlahi Mohamud Profile">
-        </div>
         <div class="title">
           <h1 class="name">Mohamed Abdlahi Mohamud</h1>
           <div class="role">Teacher — Math, Physics & ICT</div>
@@ -154,17 +150,12 @@
               <div><strong>Jaabir Mohamed Farah</strong> — Deputy Principal<br>Phone: 0907760266 — Location: Hingalool</div>
             </div>
           </div>
-
-          <div class="section">
-            <h3>Quick Actions</h3>
-            <p class="small">Use the buttons at top to print or save this CV as PDF. To publish online: upload this HTML file to a GitHub repo and enable GitHub Pages (or drag & drop to Netlify).</p>
-          </div>
         </aside>
 
       </div>
 
       <footer>
-        Created with ♥ — Profile photo © Mohamed Abdlahi Mohamud.
+        Created with ♥ — Mohamed Abdlahi Mohamud.
       </footer>
     </div>
   </div>
